@@ -60,7 +60,7 @@ hi Label           guifg=#E6DB74               gui=none
 hi Macro           guifg=#C4BE89               gui=italic
 hi SpecialKey      guifg=#66D9EF               gui=italic
 
-hi MatchParen      guifg=#000000 guibg=#FD971F gui=bold
+hi MatchParen      guifg=#f92672 guibg=NONE    gui=underline
 hi ModeMsg         guifg=#E6DB74
 hi MoreMsg         guifg=#E6DB74
 hi Operator        guifg=#F92672
@@ -72,7 +72,7 @@ hi PmenuSbar                     guibg=#080808
 hi PmenuThumb      guifg=#66D9EF
 
 hi PreCondit       guifg=#A6E22E               gui=bold
-hi PreProc         guifg=#A6E22E
+hi PreProc         guifg=#f92672 guibg=NONE    gui=NONE
 hi Question        guifg=#66D9EF
 hi Repeat          guifg=#F92672               gui=bold
 hi Search          guifg=#000000 guibg=#FFE792
@@ -123,7 +123,7 @@ else
    hi Normal          guifg=#F8F8F2 guibg=#1B1D1E
    hi Comment         guifg=#7E8E91
    hi CursorLine                    guibg=#293739
-   hi CursorLineNr    guifg=#FD971F               gui=none
+   hi CursorLineNr    guifg=#FFFFFF               gui=none
    hi CursorColumn                  guibg=#293739
    hi ColorColumn                   guibg=#232526
    hi LineNr          guifg=#465457 guibg=#232526
@@ -142,7 +142,7 @@ if &t_Co > 255
    else
       hi Normal       ctermfg=252 ctermbg=233
       hi CursorLine               ctermbg=234   cterm=none
-      hi CursorLineNr ctermfg=208               cterm=none
+      hi CursorLineNr ctermfg=255               cterm=none
    endif
    hi Boolean         ctermfg=135
    hi Character       ctermfg=144
@@ -177,7 +177,7 @@ if &t_Co > 255
    hi Macro           ctermfg=193
    hi SpecialKey      ctermfg=81
 
-   hi MatchParen      ctermfg=233  ctermbg=208 cterm=bold
+   hi MatchParen      ctermfg=197  ctermbg=NONE cterm=underline
    hi ModeMsg         ctermfg=229
    hi MoreMsg         ctermfg=229
    hi Operator        ctermfg=161
@@ -189,7 +189,7 @@ if &t_Co > 255
    hi PmenuThumb      ctermfg=81
 
    hi PreCondit       ctermfg=118               cterm=bold
-   hi PreProc         ctermfg=118
+   hi PreProc         ctermfg=197 ctermbg=NONE  cterm=NONE
    hi Question        ctermfg=81
    hi Repeat          ctermfg=161               cterm=bold
    hi Search          ctermfg=0   ctermbg=222   cterm=NONE
@@ -235,7 +235,7 @@ if &t_Co > 255
    if exists("g:rehash256") && g:rehash256 == 1
        hi Normal       ctermfg=252 ctermbg=234
        hi CursorLine               ctermbg=236   cterm=none
-       hi CursorLineNr ctermfg=208               cterm=none
+       hi CursorLineNr ctermfg=255               cterm=none
 
        hi Boolean         ctermfg=141
        hi Character       ctermfg=222
@@ -256,7 +256,7 @@ if &t_Co > 255
        hi Keyword         ctermfg=197               cterm=bold
        hi Operator        ctermfg=197
        hi PreCondit       ctermfg=154               cterm=bold
-       hi PreProc         ctermfg=154
+       hi PreProc         ctermfg=197 ctermbg=NONE  cterm=NONE
        hi Repeat          ctermfg=197               cterm=bold
 
        hi Statement       ctermfg=197               cterm=bold
